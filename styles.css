@@ -1,1 +1,42 @@
-ECHO is on.
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Navbar Styles */
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.navbar-links {
+    display: flex;
+    gap: 25px;
+    padding-top: 1em;
+    font-size: 30px;
+}
+
+.n-links {
+    list-style-type: none;
+}
+
+@media all and (max-width: 600px){
+    .navbar-container {
+        flex-wrap: wrap;
+    }
+
+    .navbar-links {
+        flex-basis: 50%;
+    }
+}
+@media all and (max-width: 400px){
+    .navbar-links {
+        flex-basis: 100%;
+    }
+    .n-links {
+        order: 1;
+    }
+}
