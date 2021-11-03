@@ -17,7 +17,7 @@ body {
 
 /*Navbar Styles */
 header {
-    
+    background-color: #717cb7;
 }
 .navbar-container {
     display: flex;
@@ -41,7 +41,9 @@ header {
     text-decoration: none;
     color: #DBE5F1;
 }
-
+.n-links, a:hover{
+    color: #ffff;
+}
 @media all and (max-width: 600px){
     .navbar-container {
         flex-wrap: wrap;
@@ -58,4 +60,9 @@ header {
     .n-links {
         order: 1;
     }
+}
+
+/* Portfolio Intro Section */
+.intro {
+    background-color: #FFFBF1;
 }
