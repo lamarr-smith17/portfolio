@@ -4,23 +4,42 @@
     padding: 0;
 }
 
+body {
+    
+}
+
+@font-face {
+    font-family: 'Zen Antique Soft';
+    src: url('https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*Navbar Styles */
+header {
+    
+}
 .navbar-container {
     display: flex;
     justify-content: center;
     align-content: center;
-    
 }
 
 .navbar-links {
     display: flex;
     gap: 25px;
     padding-top: 1em;
+    font-family: 'Zen Antique Soft';
     font-size: 30px;
 }
 
 .n-links {
     list-style-type: none;
+    
+}
+.n-links, a{
+    text-decoration: none;
+    color: #DBE5F1;
 }
 
 @media all and (max-width: 600px){
