@@ -44,25 +44,44 @@ header {
 .n-links, a:hover{
     color: #ffff;
 }
-@media all and (max-width: 600px){
-    .navbar-container {
-        flex-wrap: wrap;
-    }
-
-    .navbar-links {
-        flex-basis: 50%;
-    }
-}
-@media all and (max-width: 400px){
-    .navbar-links {
-        flex-basis: 100%;
-    }
-    .n-links {
-        order: 1;
-    }
-}
 
 /* Portfolio Intro Section */
 .intro {
-    background-color: #FFFBF1;
+    display: grid;
+    grid-template-columns: 2fr 2fr ;
+    background-color: #f5f0e1;
+    justify-items: center;
+    align-items: center;
 }
+#section-img {
+    grid-column-start: 1;
+    width: 250px;
+    height: 500px;
+    padding-bottom: 2em;
+}
+.intro-header, .section-bio {
+    grid-column-start: 2;
+ 
+}
+
+.intro-header{
+
+}
+
+/* About me section */
+.about-me {
+    background: #f5f0e1;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.about-header {
+
+}
+
+#about-img {
+    width: 325px;
+    height: 650px;
+    
+}
+
