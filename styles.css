@@ -19,7 +19,7 @@ body {
 
 /*Navbar Styles */
 header {
-    background-color: #717cb7;
+    background-color: #222831;
 }
 .navbar-container {
     display: flex;
@@ -51,9 +51,10 @@ header {
 .intro {
     display: grid;
     grid-template-columns: 2fr 2fr ;
-    background-color: #f5f0e1;
+    background-color: #393E46;
     justify-items: center;
     align-items: center;
+    color: #FFD369;
 }
 #section-img {
     grid-column-start: 1;
@@ -66,20 +67,15 @@ header {
  
 }
 
-
-/* About me section */
-.about-me {
-    background: #f5f0e1;
+/* Skills Styles */
+.skills {
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    background-color: #393E46;
+
 }
 
-
-#about-img {
-    width: 325px;
-    height: 650px;
-    
-}
 
 /* Footer Styles */
 footer{
@@ -87,7 +83,7 @@ footer{
     flex: 1;
     gap: 2em;
     justify-content: center;
-    background-color: #717cb7;
+    background-color: #222831;
 }
 .footer-bar {
     display: inline-flex;
