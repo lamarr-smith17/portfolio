@@ -50,21 +50,26 @@ header {
 /* Portfolio Intro Section */
 .intro {
     display: grid;
-    grid-template-columns: 2fr 2fr ;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
     background-color: #393E46;
     justify-items: center;
     align-items: center;
     color: #FFD369;
 }
 #section-img {
-    grid-column-start: 1;
+    grid-row-start: 2;
     width: 250px;
     height: 500px;
-    padding-bottom: 2em;
 }
-.intro-header, .section-bio {
+
+.intro-header {
     grid-column-start: 2;
- 
+    grid-row-start: 2;
+}
+.section-bio{
+    grid-column-start:2 ;
+    grid-row-start: 2;
 }
 
 /* Skills Styles */
@@ -73,7 +78,11 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     background-color: #393E46;
+    color: #FFD369;
+}
 
+.skill-details{
+    max-width: 300px;
 }
 
 
