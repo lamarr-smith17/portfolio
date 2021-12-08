@@ -64,12 +64,12 @@ header {
 }
 
 .intro-header {
-    grid-column-start: 2;
-    grid-row-start: 2;
+  
 }
 .section-bio{
     grid-column-start:2 ;
     grid-row-start: 2;
+    max-width: 300px;
 }
 
 /* Skills Styles */
@@ -85,7 +85,15 @@ header {
     max-width: 300px;
 }
 
-
+/* Project Styles */
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    background-color: #393E46;
+}
+.portfolio-item2 {
+    grid-column-start: 2;
+}
 /* Footer Styles */
 footer{
     display: flex;
@@ -99,6 +107,7 @@ footer{
     flex-direction: row;
     padding-top: 2em;
     gap: 2em;
+    color: #DBE5F1;
 }
 .social-bar {
     display: flex;
